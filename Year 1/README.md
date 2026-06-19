@@ -2,44 +2,36 @@
 
 Welcome to my Year 1 coursework portfolio for the Bachelor of Computer Science (Data Engineering) programme at Universiti Teknologi Malaysia (UTM).
 
-This folder contains assignments, laboratory exercises, quizzes, projects, and learning materials completed throughout my first year of study.
+This folder contains assignments, laboratory exercises, quizzes, projects, reports, and learning materials completed throughout my first year of study. Year 1 established my foundation in programming, mathematics, computer systems, information technology, and software development principles.
 
 ---
 
 ## 📚 Semester 1
 
-### Courses
-- SECI1013 Discrete Structure
-- SECJ1013 Programming Technique I
-- SECP1513 Technology and Information System
-- SECR1013 Digital Logic
-
-### Highlights
-- Learned fundamental programming concepts using C++.
-- Developed logical and mathematical thinking through discrete structures.
-- Gained exposure to information technology through industry talks, industry visits, and design thinking activities.
-- Learned the basics of digital circuits and logic design.
+| Course Code | Course Name | Link |
+|------------|------------|------|
+| SECI1013 | Discrete Structure | [View Course](./Sem%201/SECI1013%20DISCRETE%20STRUCTURE) |
+| SECJ1013 | Programming Technique I | [View Course](./Sem%201/SECJ1013%20PROGRAMMING%20TECHNIQUE%20I) |
+| SECP1513 | Technology and Information System | [View Course](./Sem%201/SECP1513%20TECHNOLOGY%20AND%20INFORMATION%20SYSTEM) |
+| SECR1013 | Digital Logic | [View Course](./Sem%201/SECR1013%20DIGITAL%20LOGIC) |
 
 ---
 
 ## 📚 Semester 2
 
-### Courses
-- Computer Organization & Architecture
-- Probability & Statistical Data Analysis
-- Programming Technique II
-- System Analysis & Design
-
-### Highlights
-- Studied computer architecture and hardware components.
-- Applied statistical methods for data analysis.
-- Enhanced programming and problem-solving skills.
-- Learned system development life cycle (SDLC), requirements analysis, and system design techniques.
+| Course Name | Link |
+|------------|------|
+| Computer Organization & Architecture | [View Course](./Sem%202/Computer%20Organization%20%26%20Architecture) |
+| Probability & Statistical Data Analysis | [View Course](./Sem%202/Probability%20%26%20Statistical%20Data%20Analysis) |
+| Programming Technique II | [View Course](./Sem%202/Programming%20Technique%20II) |
+| System Analysis & Design | [View Course](./Sem%202/System%20Analysis%20%26%20Design) |
 
 ---
 
-## 💡 Reflection
+## 💡 Year 1 Reflection
 
-Year 1 established my foundation in computer science and data engineering. Through various assignments, projects, and practical exercises, I developed essential skills in programming, problem-solving, logical reasoning, and teamwork.
+Year 1 marked the beginning of my journey in Computer Science and Data Engineering. Through various assignments, projects, laboratory exercises, and coursework activities, I developed fundamental knowledge in programming, mathematical reasoning, computer systems, and software development.
 
-The knowledge gained during this year prepared me for more advanced topics and projects in subsequent semesters and strengthened my interest in the field of Data Engineering.
+The learning experiences throughout both semesters strengthened my problem-solving abilities, analytical thinking, teamwork, and technical skills. These courses provided a strong academic foundation that prepared me for more advanced subjects and projects in subsequent years of study.
+
+I am grateful for the opportunities to apply theoretical concepts to practical tasks, which helped me build confidence and deepen my interest in software development, data analytics, and data engineering.
