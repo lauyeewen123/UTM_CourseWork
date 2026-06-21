@@ -1,0 +1,326 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2025.2" RunE2="T">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="138" y="90" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">C:\Users\yeewe\Downloads\Lab 1 Dataset-20260408\customers.xlsx|||`sheet1$`</File>
+          <FormatSpecificOptions>
+            <FirstRowData>False</FirstRowData>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>customers.xlsx
+Query=`sheet1$`</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Customer ID" source="File: C:\Users\yeewe\Downloads\Lab 1 Dataset-20260408\customers.xlsx|||`sheet1$`" type="Double" />
+            <Field name="Store Number" size="255" source="File: C:\Users\yeewe\Downloads\Lab 1 Dataset-20260408\customers.xlsx|||`sheet1$`" type="V_String" />
+            <Field name="Customer Segment" size="255" source="File: C:\Users\yeewe\Downloads\Lab 1 Dataset-20260408\customers.xlsx|||`sheet1$`" type="V_String" />
+            <Field name="Responder" size="255" source="File: C:\Users\yeewe\Downloads\Lab 1 Dataset-20260408\customers.xlsx|||`sheet1$`" type="V_String" />
+            <Field name="Name" size="255" source="File: C:\Users\yeewe\Downloads\Lab 1 Dataset-20260408\customers.xlsx|||`sheet1$`" type="V_String" />
+            <Field name="Address" size="255" source="File: C:\Users\yeewe\Downloads\Lab 1 Dataset-20260408\customers.xlsx|||`sheet1$`" type="V_String" />
+            <Field name="Postcode" size="255" source="File: C:\Users\yeewe\Downloads\Lab 1 Dataset-20260408\customers.xlsx|||`sheet1$`" type="V_String" />
+            <Field name="CustomerType" size="255" source="File: C:\Users\yeewe\Downloads\Lab 1 Dataset-20260408\customers.xlsx|||`sheet1$`" type="V_String" />
+            <Field name="AverageTransaction" source="File: C:\Users\yeewe\Downloads\Lab 1 Dataset-20260408\customers.xlsx|||`sheet1$`" type="Double" />
+            <Field name="LastTransactionAmount" source="File: C:\Users\yeewe\Downloads\Lab 1 Dataset-20260408\customers.xlsx|||`sheet1$`" type="Double" />
+            <Field name="TransactionsPerYear" source="File: C:\Users\yeewe\Downloads\Lab 1 Dataset-20260408\customers.xlsx|||`sheet1$`" type="Double" />
+            <Field name="Income" source="File: C:\Users\yeewe\Downloads\Lab 1 Dataset-20260408\customers.xlsx|||`sheet1$`" type="Double" />
+            <Field name="HomeValue" source="File: C:\Users\yeewe\Downloads\Lab 1 Dataset-20260408\customers.xlsx|||`sheet1$`" type="Double" />
+            <Field name="Lat" source="File: C:\Users\yeewe\Downloads\Lab 1 Dataset-20260408\customers.xlsx|||`sheet1$`" type="Double" />
+            <Field name="Lon" source="File: C:\Users\yeewe\Downloads\Lab 1 Dataset-20260408\customers.xlsx|||`sheet1$`" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="150" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">C:\Users\yeewe\Downloads\Lab 1 Dataset-20260408\transactions.xlsx|||`sheet1$`</File>
+          <FormatSpecificOptions>
+            <FirstRowData>False</FirstRowData>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>transactions.xlsx
+Query=`sheet1$`</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Customer_ID" size="255" source="File: C:\Users\yeewe\Downloads\Lab 1 Dataset-20260408\transactions.xlsx|||`sheet1$`" type="V_String" />
+            <Field name="Order_ID" size="255" source="File: C:\Users\yeewe\Downloads\Lab 1 Dataset-20260408\transactions.xlsx|||`sheet1$`" type="V_String" />
+            <Field name="Order_Priority" size="255" source="File: C:\Users\yeewe\Downloads\Lab 1 Dataset-20260408\transactions.xlsx|||`sheet1$`" type="V_String" />
+            <Field name="Discount" size="255" source="File: C:\Users\yeewe\Downloads\Lab 1 Dataset-20260408\transactions.xlsx|||`sheet1$`" type="V_String" />
+            <Field name="Unit_Price" size="255" source="File: C:\Users\yeewe\Downloads\Lab 1 Dataset-20260408\transactions.xlsx|||`sheet1$`" type="V_String" />
+            <Field name="Quantity_ordered_new" size="255" source="File: C:\Users\yeewe\Downloads\Lab 1 Dataset-20260408\transactions.xlsx|||`sheet1$`" type="V_String" />
+            <Field name="Order_Date" size="255" source="File: C:\Users\yeewe\Downloads\Lab 1 Dataset-20260408\transactions.xlsx|||`sheet1$`" type="V_String" />
+            <Field name="Ship_Date" size="255" source="File: C:\Users\yeewe\Downloads\Lab 1 Dataset-20260408\transactions.xlsx|||`sheet1$`" type="V_String" />
+            <Field name="Shipping_Cost" size="255" source="File: C:\Users\yeewe\Downloads\Lab 1 Dataset-20260408\transactions.xlsx|||`sheet1$`" type="V_String" />
+            <Field name="Ship_Mode" size="255" source="File: C:\Users\yeewe\Downloads\Lab 1 Dataset-20260408\transactions.xlsx|||`sheet1$`" type="V_String" />
+            <Field name="Product_Category" size="255" source="File: C:\Users\yeewe\Downloads\Lab 1 Dataset-20260408\transactions.xlsx|||`sheet1$`" type="V_String" />
+            <Field name="Product_Sub-Category" size="255" source="File: C:\Users\yeewe\Downloads\Lab 1 Dataset-20260408\transactions.xlsx|||`sheet1$`" type="V_String" />
+            <Field name="Product_Container" size="255" source="File: C:\Users\yeewe\Downloads\Lab 1 Dataset-20260408\transactions.xlsx|||`sheet1$`" type="V_String" />
+            <Field name="Product_Base_Margin" size="255" source="File: C:\Users\yeewe\Downloads\Lab 1 Dataset-20260408\transactions.xlsx|||`sheet1$`" type="V_String" />
+            <Field name="Profit" size="255" source="File: C:\Users\yeewe\Downloads\Lab 1 Dataset-20260408\transactions.xlsx|||`sheet1$`" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="306" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="Customer ID" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="Customer_ID" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Right_Customer_ID" selected="False" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="234" y="126" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Customer ID" selected="True" type="String" size="8192" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="318" y="294" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="2" />
+          <Fields>
+            <Field name="Word" />
+            <Field name="Replace" />
+          </Fields>
+          <Data>
+            <r>
+              <c>ST</c>
+              <c>Street</c>
+            </r>
+            <r>
+              <c>LN</c>
+              <c>Line</c>
+            </r>
+          </Data>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.FindReplace.FindReplace">
+        <Position x="474" y="222" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FieldFind>Address</FieldFind>
+          <FieldSearch>Word</FieldSearch>
+          <ReplaceFoundField>Replace</ReplaceFoundField>
+          <FindMode>FindAny</FindMode>
+          <NoCase value="False" />
+          <MatchWholeWord value="False" />
+          <ReplaceMode>Replace</ReplaceMode>
+          <ReplaceMultipleFound value="True" />
+          <ReplaceAppendFields />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFindReplace" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="450" y="306" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="1" />
+          <Fields>
+            <Field name="Remarks" />
+          </Fields>
+          <Data>
+            <r>
+              <c>Done</c>
+            </r>
+          </Data>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AppendFields.AppendFields">
+        <Position x="582" y="246" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <CartesianMode>Error</CartesianMode>
+          <SelectConfiguration>
+            <Configuration outputConnection="Output">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAppendFields" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="3" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="3" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Join" />
+      <Destination ToolID="7" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="7" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="9" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="9" Connection="Source" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <DefaultTZ value="Local" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <IsTemplate value="False" />
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Workflow3</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="6aba9730-415a-43c6-9730-ba8e92ab9b2b" />
+      <Telemetry>
+        <PreviousWorkflowId value="5ba98afb-dc37-45f5-9767-4d1d8e5906ca" />
+        <OriginWorkflowId value="5ba98afb-dc37-45f5-9767-4d1d8e5906ca" />
+      </Telemetry>
+      <PlatformWorkflowId value="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

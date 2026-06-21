@@ -1,0 +1,664 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2025.2" RunE2="T">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="115" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">C:\Users\yeewe\Downloads\Lab 1 Dataset-20260408\SUPERSTORE ORDERS_20162019.xlsx|||&lt;List of Sheet Names&gt;</File>
+          <FormatSpecificOptions>
+            <FirstRowData>False</FirstRowData>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>SUPERSTORE ORDERS_20162019.xlsx
+Query=&lt;List of Sheet Names&gt;</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Sheet Names" size="31" source="File: C:\Users\yeewe\Downloads\Lab 1 Dataset-20260408\SUPERSTORE ORDERS_20162019.xlsx|||&lt;List of Sheet Names&gt;" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DynamicInput.DynamicInput">
+        <Position x="174" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <InputConfiguration>
+            <Configuration>
+              <Passwords />
+              <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">C:\Users\yeewe\Downloads\Lab 1 Dataset-20260408\SUPERSTORE ORDERS_20162019.xlsx|||`2016$`</File>
+              <FormatSpecificOptions>
+                <FirstRowData>False</FirstRowData>
+                <ImportLine>1</ImportLine>
+              </FormatSpecificOptions>
+            </Configuration>
+          </InputConfiguration>
+          <Mode>ReadList</Mode>
+          <ReadList_Field>Sheet Names</ReadList_Field>
+          <ReadList_Type>FileName</ReadList_Type>
+          <ErrorBehaviour>Error</ErrorBehaviour>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDynamicInput" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="438" y="18" width="107" height="24" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Filter</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="True" />
+          <Folded value="True" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Filter</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="3">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="462" y="78" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Expression>[Category] = "Technology"</Expression>
+              <Mode>Custom</Mode>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>[Category] = "Technology"</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+        <Node ToolID="4">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="582" y="66" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Mode>Simple</Mode>
+              <Simple>
+                <Operator>=</Operator>
+                <Field>State</Field>
+                <Operands>
+                  <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+                  <DateType>fixed</DateType>
+                  <PeriodDate>2026-04-08 16:28:34</PeriodDate>
+                  <PeriodType>
+                  </PeriodType>
+                  <PeriodCount>0</PeriodCount>
+                  <Operand>California</Operand>
+                  <StartDate>2026-04-08 16:28:34</StartDate>
+                  <EndDate>2026-04-08 16:28:34</EndDate>
+                </Operands>
+              </Simple>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>[State] = "California"</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+        <Node ToolID="5">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="486" y="210" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Expression>[Category]="Technology" and [State]="California"</Expression>
+              <Mode>Custom</Mode>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>[Category]="Technology" and [State]="California"</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+        <Node ToolID="6">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+            <Position x="630" y="198" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SortInfo locale="1033">
+                <Field field="Profit" order="Descending" />
+                <Field field="City" order="Ascending" />
+              </SortInfo>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Profit - Descending
+City - Ascending</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+        </Node>
+        <Node ToolID="7">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Sample.Sample">
+            <Position x="762" y="198" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Mode>First</Mode>
+              <N>1</N>
+              <GroupFields orderChanged="False">
+                <Field name="City" />
+              </GroupFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>First 1 rows</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSample" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="402" y="102" width="194" height="24" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Imputation&amp; Margin</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="True" />
+          <Folded value="True" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Imputation&amp; Margin</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="9">
+          <GuiSettings>
+            <Position x="426" y="150" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="listbox Select Incoming Fields">"Days to Ship Scheduled"</Value>
+              <Value name="radio Null Value">True</Value>
+              <Value name="radio User Specified Replace From Value">False</Value>
+              <Value name="updown User Replace Value">0.00000</Value>
+              <Value name="radio Mean">True</Value>
+              <Value name="radio Median">False</Value>
+              <Value name="radio Mode">False</Value>
+              <Value name="radio User Specified Replace With Value">False</Value>
+              <Value name="updown User Replace With Value">0.00000</Value>
+              <Value name="checkbox Impute Indicator">False</Value>
+              <Value name="checkbox Imputed Values Separate Field">False</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Category" size="255" source="Formula: IF &#xA;REGEX_Match([_CurrentFieldName_], '.*(?:_Indicator)$', 0) &amp;&amp; IsNull([_CurrentField_]) THEN &#xA;  0 &#xA;ELSE &#xA;  [_CurrentField_] &#xA;ENDIF" type="V_String" />
+                <Field name="City" size="255" source="Formula: IF &#xA;REGEX_Match([_CurrentFieldName_], '.*(?:_Indicator)$', 0) &amp;&amp; IsNull([_CurrentField_]) THEN &#xA;  0 &#xA;ELSE &#xA;  [_CurrentField_] &#xA;ENDIF" type="V_String" />
+                <Field name="Country/Region" size="255" source="Formula: IF &#xA;REGEX_Match([_CurrentFieldName_], '.*(?:_Indicator)$', 0) &amp;&amp; IsNull([_CurrentField_]) THEN &#xA;  0 &#xA;ELSE &#xA;  [_CurrentField_] &#xA;ENDIF" type="V_String" />
+                <Field name="Customer Name" size="255" source="Formula: IF &#xA;REGEX_Match([_CurrentFieldName_], '.*(?:_Indicator)$', 0) &amp;&amp; IsNull([_CurrentField_]) THEN &#xA;  0 &#xA;ELSE &#xA;  [_CurrentField_] &#xA;ENDIF" type="V_String" />
+                <Field name="Discount" source="Formula: IF &#xA;REGEX_Match([_CurrentFieldName_], '.*(?:_Indicator)$', 0) &amp;&amp; IsNull([_CurrentField_]) THEN &#xA;  0 &#xA;ELSE &#xA;  [_CurrentField_] &#xA;ENDIF" type="Double" />
+                <Field name="Order ID" size="255" source="Formula: IF &#xA;REGEX_Match([_CurrentFieldName_], '.*(?:_Indicator)$', 0) &amp;&amp; IsNull([_CurrentField_]) THEN &#xA;  0 &#xA;ELSE &#xA;  [_CurrentField_] &#xA;ENDIF" type="V_String" />
+                <Field name="Postal Code" size="255" source="Formula: IF &#xA;REGEX_Match([_CurrentFieldName_], '.*(?:_Indicator)$', 0) &amp;&amp; IsNull([_CurrentField_]) THEN &#xA;  0 &#xA;ELSE &#xA;  [_CurrentField_] &#xA;ENDIF" type="V_String" />
+                <Field name="Product Name" size="255" source="Formula: IF &#xA;REGEX_Match([_CurrentFieldName_], '.*(?:_Indicator)$', 0) &amp;&amp; IsNull([_CurrentField_]) THEN &#xA;  0 &#xA;ELSE &#xA;  [_CurrentField_] &#xA;ENDIF" type="V_WString" />
+                <Field name="Profit" source="Formula: IF &#xA;REGEX_Match([_CurrentFieldName_], '.*(?:_Indicator)$', 0) &amp;&amp; IsNull([_CurrentField_]) THEN &#xA;  0 &#xA;ELSE &#xA;  [_CurrentField_] &#xA;ENDIF" type="Double" />
+                <Field name="Quantity" source="Formula: IF &#xA;REGEX_Match([_CurrentFieldName_], '.*(?:_Indicator)$', 0) &amp;&amp; IsNull([_CurrentField_]) THEN &#xA;  0 &#xA;ELSE &#xA;  [_CurrentField_] &#xA;ENDIF" type="Double" />
+                <Field name="Region" size="255" source="Formula: IF &#xA;REGEX_Match([_CurrentFieldName_], '.*(?:_Indicator)$', 0) &amp;&amp; IsNull([_CurrentField_]) THEN &#xA;  0 &#xA;ELSE &#xA;  [_CurrentField_] &#xA;ENDIF" type="V_String" />
+                <Field name="Sales" source="Formula: IF &#xA;REGEX_Match([_CurrentFieldName_], '.*(?:_Indicator)$', 0) &amp;&amp; IsNull([_CurrentField_]) THEN &#xA;  0 &#xA;ELSE &#xA;  [_CurrentField_] &#xA;ENDIF" type="Double" />
+                <Field name="Segment" size="255" source="Formula: IF &#xA;REGEX_Match([_CurrentFieldName_], '.*(?:_Indicator)$', 0) &amp;&amp; IsNull([_CurrentField_]) THEN &#xA;  0 &#xA;ELSE &#xA;  [_CurrentField_] &#xA;ENDIF" type="V_String" />
+                <Field name="Ship Mode" size="255" source="Formula: IF &#xA;REGEX_Match([_CurrentFieldName_], '.*(?:_Indicator)$', 0) &amp;&amp; IsNull([_CurrentField_]) THEN &#xA;  0 &#xA;ELSE &#xA;  [_CurrentField_] &#xA;ENDIF" type="V_String" />
+                <Field name="State" size="255" source="Formula: IF &#xA;REGEX_Match([_CurrentFieldName_], '.*(?:_Indicator)$', 0) &amp;&amp; IsNull([_CurrentField_]) THEN &#xA;  0 &#xA;ELSE &#xA;  [_CurrentField_] &#xA;ENDIF" type="V_String" />
+                <Field name="Sub-Category" size="255" source="Formula: IF &#xA;REGEX_Match([_CurrentFieldName_], '.*(?:_Indicator)$', 0) &amp;&amp; IsNull([_CurrentField_]) THEN &#xA;  0 &#xA;ELSE &#xA;  [_CurrentField_] &#xA;ENDIF" type="V_String" />
+                <Field name="OrderDate" source="Formula: IF &#xA;REGEX_Match([_CurrentFieldName_], '.*(?:_Indicator)$', 0) &amp;&amp; IsNull([_CurrentField_]) THEN &#xA;  0 &#xA;ELSE &#xA;  [_CurrentField_] &#xA;ENDIF" type="Date" />
+                <Field name="ShipDate" source="Formula: IF &#xA;REGEX_Match([_CurrentFieldName_], '.*(?:_Indicator)$', 0) &amp;&amp; IsNull([_CurrentField_]) THEN &#xA;  0 &#xA;ELSE &#xA;  [_CurrentField_] &#xA;ENDIF" type="Date" />
+                <Field name="Days to Ship Scheduled" source="Formula: IF &#xA;REGEX_Match([_CurrentFieldName_], '.*(?:_Indicator)$', 0) &amp;&amp; IsNull([_CurrentField_]) THEN &#xA;  0 &#xA;ELSE &#xA;  [_CurrentField_] &#xA;ENDIF" type="Double" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings Macro="Imputation_v3.yxmc" />
+        </Node>
+        <Node ToolID="10">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="522" y="150" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="IF [Sales] !=0 THEN [Profit]/[Sales] ELSE 0 ENDIF" field="Margin" size="19.2" type="FixedDecimal" enabled="true" />
+                <FormulaField expression="DateTimeDiff([ShipDate],[OrderDate],&quot;day&quot;)" field="Day to ship" size="2" type="Int16" enabled="true" />
+                <FormulaField expression="IF [Day to ship]=[Days to Ship Scheduled] THEN &quot;Shipped On Time&quot; ELSEIF [Day to ship]&gt;[Days to Ship Scheduled] THEN &quot;Shipped Late&quot; ELSE &quot;Shipped Early&quot; ENDIF" field="Shipped Status" size="1073741823" type="V_WString" enabled="true" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Margin = IF [Sales] !=0 THEN [Profit]/[Sales] ELSE 0 ENDIF
+Day to ship = DateTim...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="66" y="282" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="0">C:\Users\yeewe\Downloads\Lab 1 Dataset-20260408\ORDERS_*.csv</File>
+          <FormatSpecificOptions>
+            <CodePage>28591</CodePage>
+            <Delimeter>,</Delimeter>
+            <IgnoreErrors>False</IgnoreErrors>
+            <FieldLen>254</FieldLen>
+            <AllowShareWrite>False</AllowShareWrite>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>ORDERS_*.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Row ID" size="254" source="File: C:\Users\yeewe\Downloads\Lab 1 Dataset-20260408\ORDERS_2020.csv" type="V_String" />
+            <Field name="Order ID" size="254" source="File: C:\Users\yeewe\Downloads\Lab 1 Dataset-20260408\ORDERS_2020.csv" type="V_String" />
+            <Field name="Order Date" size="254" source="File: C:\Users\yeewe\Downloads\Lab 1 Dataset-20260408\ORDERS_2020.csv" type="V_String" />
+            <Field name="Ship Date" size="254" source="File: C:\Users\yeewe\Downloads\Lab 1 Dataset-20260408\ORDERS_2020.csv" type="V_String" />
+            <Field name="Ship Mode" size="254" source="File: C:\Users\yeewe\Downloads\Lab 1 Dataset-20260408\ORDERS_2020.csv" type="V_String" />
+            <Field name="Customer Name" size="254" source="File: C:\Users\yeewe\Downloads\Lab 1 Dataset-20260408\ORDERS_2020.csv" type="V_String" />
+            <Field name="Segment" size="254" source="File: C:\Users\yeewe\Downloads\Lab 1 Dataset-20260408\ORDERS_2020.csv" type="V_String" />
+            <Field name="Country/Region" size="254" source="File: C:\Users\yeewe\Downloads\Lab 1 Dataset-20260408\ORDERS_2020.csv" type="V_String" />
+            <Field name="City" size="254" source="File: C:\Users\yeewe\Downloads\Lab 1 Dataset-20260408\ORDERS_2020.csv" type="V_String" />
+            <Field name="State" size="254" source="File: C:\Users\yeewe\Downloads\Lab 1 Dataset-20260408\ORDERS_2020.csv" type="V_String" />
+            <Field name="Postal Code" size="254" source="File: C:\Users\yeewe\Downloads\Lab 1 Dataset-20260408\ORDERS_2020.csv" type="V_String" />
+            <Field name="Region" size="254" source="File: C:\Users\yeewe\Downloads\Lab 1 Dataset-20260408\ORDERS_2020.csv" type="V_String" />
+            <Field name="Category" size="254" source="File: C:\Users\yeewe\Downloads\Lab 1 Dataset-20260408\ORDERS_2020.csv" type="V_String" />
+            <Field name="Sub-Category" size="254" source="File: C:\Users\yeewe\Downloads\Lab 1 Dataset-20260408\ORDERS_2020.csv" type="V_String" />
+            <Field name="Product Name" size="254" source="File: C:\Users\yeewe\Downloads\Lab 1 Dataset-20260408\ORDERS_2020.csv" type="V_String" />
+            <Field name="Sales" size="254" source="File: C:\Users\yeewe\Downloads\Lab 1 Dataset-20260408\ORDERS_2020.csv" type="V_String" />
+            <Field name="Quantity" size="254" source="File: C:\Users\yeewe\Downloads\Lab 1 Dataset-20260408\ORDERS_2020.csv" type="V_String" />
+            <Field name="Discount" size="254" source="File: C:\Users\yeewe\Downloads\Lab 1 Dataset-20260408\ORDERS_2020.csv" type="V_String" />
+            <Field name="Profit" size="254" source="File: C:\Users\yeewe\Downloads\Lab 1 Dataset-20260408\ORDERS_2020.csv" type="V_String" />
+            <Field name="Days to Ship Scheduled" size="254" source="File: C:\Users\yeewe\Downloads\Lab 1 Dataset-20260408\ORDERS_2020.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AutoField.AutoField">
+        <Position x="234" y="294" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Fields>
+            <Field field="Row ID" selected="True" />
+            <Field field="Order ID" selected="True" />
+            <Field field="Order Date" selected="True" />
+            <Field field="Ship Date" selected="True" />
+            <Field field="Ship Mode" selected="True" />
+            <Field field="Customer Name" selected="True" />
+            <Field field="Segment" selected="True" />
+            <Field field="Country/Region" selected="True" />
+            <Field field="City" selected="True" />
+            <Field field="State" selected="True" />
+            <Field field="Postal Code" selected="True" />
+            <Field field="Region" selected="True" />
+            <Field field="Category" selected="True" />
+            <Field field="Sub-Category" selected="True" />
+            <Field field="Product Name" selected="True" />
+            <Field field="Sales" selected="True" />
+            <Field field="Quantity" selected="True" />
+            <Field field="Discount" selected="True" />
+            <Field field="Profit" selected="True" />
+            <Field field="Days to Ship Scheduled" selected="True" />
+            <Field field="*Unknown" selected="True" />
+          </Fields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Row ID" source="File: C:\Users\yeewe\Downloads\Lab 1 Dataset-20260408\ORDERS_2020.csv" type="Int16" />
+            <Field name="Order ID" size="14" source="File: C:\Users\yeewe\Downloads\Lab 1 Dataset-20260408\ORDERS_2020.csv" type="String" />
+            <Field name="Order Date" size="15" source="File: C:\Users\yeewe\Downloads\Lab 1 Dataset-20260408\ORDERS_2020.csv" type="String" />
+            <Field name="Ship Date" size="15" source="File: C:\Users\yeewe\Downloads\Lab 1 Dataset-20260408\ORDERS_2020.csv" type="String" />
+            <Field name="Ship Mode" size="14" source="File: C:\Users\yeewe\Downloads\Lab 1 Dataset-20260408\ORDERS_2020.csv" type="String" />
+            <Field name="Customer Name" size="22" source="File: C:\Users\yeewe\Downloads\Lab 1 Dataset-20260408\ORDERS_2020.csv" type="V_String" />
+            <Field name="Segment" size="11" source="File: C:\Users\yeewe\Downloads\Lab 1 Dataset-20260408\ORDERS_2020.csv" type="String" />
+            <Field name="Country/Region" size="13" source="File: C:\Users\yeewe\Downloads\Lab 1 Dataset-20260408\ORDERS_2020.csv" type="String" />
+            <Field name="City" size="17" source="File: C:\Users\yeewe\Downloads\Lab 1 Dataset-20260408\ORDERS_2020.csv" type="V_String" />
+            <Field name="State" size="20" source="File: C:\Users\yeewe\Downloads\Lab 1 Dataset-20260408\ORDERS_2020.csv" type="V_String" />
+            <Field name="Postal Code" source="File: C:\Users\yeewe\Downloads\Lab 1 Dataset-20260408\ORDERS_2020.csv" type="Int32" />
+            <Field name="Region" size="7" source="File: C:\Users\yeewe\Downloads\Lab 1 Dataset-20260408\ORDERS_2020.csv" type="String" />
+            <Field name="Category" size="15" source="File: C:\Users\yeewe\Downloads\Lab 1 Dataset-20260408\ORDERS_2020.csv" type="String" />
+            <Field name="Sub-Category" size="11" source="File: C:\Users\yeewe\Downloads\Lab 1 Dataset-20260408\ORDERS_2020.csv" type="String" />
+            <Field name="Product Name" size="127" source="File: C:\Users\yeewe\Downloads\Lab 1 Dataset-20260408\ORDERS_2020.csv" type="V_String" />
+            <Field name="Sales" source="File: C:\Users\yeewe\Downloads\Lab 1 Dataset-20260408\ORDERS_2020.csv" type="Double" />
+            <Field name="Quantity" source="File: C:\Users\yeewe\Downloads\Lab 1 Dataset-20260408\ORDERS_2020.csv" type="Byte" />
+            <Field name="Discount" source="File: C:\Users\yeewe\Downloads\Lab 1 Dataset-20260408\ORDERS_2020.csv" type="Double" />
+            <Field name="Profit" source="File: C:\Users\yeewe\Downloads\Lab 1 Dataset-20260408\ORDERS_2020.csv" type="Double" />
+            <Field name="Days to Ship Scheduled" source="File: C:\Users\yeewe\Downloads\Lab 1 Dataset-20260408\ORDERS_2020.csv" type="Byte" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAutoField" />
+    </Node>
+    <Node ToolID="16">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DateTime.DateTime">
+        <Position x="390" y="294" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <IsFrom value="False" />
+          <InputFieldName>Order ID</InputFieldName>
+          <Language>English</Language>
+          <Format>yyyy-MM-dd hh:mm:ss</Format>
+          <OutputFieldName>OrderDate_New</OutputFieldName>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Convert Order ID From:
+yyyy-MM-dd hh:mm:ss</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDateTime" />
+    </Node>
+    <Node ToolID="21">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="774" y="186" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <AutoResetMode>Custom</AutoResetMode>
+          <MultiMetaInfo>
+            <MetaInfo name="#1">
+              <RecordInfo>
+                <Field name="Category" size="255" source="File: C:\Users\yeewe\Downloads\Lab 1 Dataset-20260408\SUPERSTORE ORDERS_20162019.xlsx|||`2016$`" type="V_String" column="1" />
+                <Field name="City" size="255" source="File: C:\Users\yeewe\Downloads\Lab 1 Dataset-20260408\SUPERSTORE ORDERS_20162019.xlsx|||`2016$`" type="V_String" column="2" />
+                <Field name="Country/Region" size="255" source="File: C:\Users\yeewe\Downloads\Lab 1 Dataset-20260408\SUPERSTORE ORDERS_20162019.xlsx|||`2016$`" type="V_String" column="3" />
+                <Field name="Customer Name" size="255" source="File: C:\Users\yeewe\Downloads\Lab 1 Dataset-20260408\SUPERSTORE ORDERS_20162019.xlsx|||`2016$`" type="V_String" column="4" />
+                <Field name="Discount" source="File: C:\Users\yeewe\Downloads\Lab 1 Dataset-20260408\SUPERSTORE ORDERS_20162019.xlsx|||`2016$`" type="Double" column="5" />
+                <Field name="Order ID" size="255" source="File: C:\Users\yeewe\Downloads\Lab 1 Dataset-20260408\SUPERSTORE ORDERS_20162019.xlsx|||`2016$`" type="V_String" column="6" />
+                <Field name="Postal Code" size="255" source="File: C:\Users\yeewe\Downloads\Lab 1 Dataset-20260408\SUPERSTORE ORDERS_20162019.xlsx|||`2016$`" type="V_String" column="7" />
+                <Field name="Product Name" size="255" source="File: C:\Users\yeewe\Downloads\Lab 1 Dataset-20260408\SUPERSTORE ORDERS_20162019.xlsx|||`2016$`" type="V_WString" column="8" />
+                <Field name="Profit" source="File: C:\Users\yeewe\Downloads\Lab 1 Dataset-20260408\SUPERSTORE ORDERS_20162019.xlsx|||`2016$`" type="Double" column="9" />
+                <Field name="Quantity" source="File: C:\Users\yeewe\Downloads\Lab 1 Dataset-20260408\SUPERSTORE ORDERS_20162019.xlsx|||`2016$`" type="Double" column="10" />
+                <Field name="Region" size="255" source="File: C:\Users\yeewe\Downloads\Lab 1 Dataset-20260408\SUPERSTORE ORDERS_20162019.xlsx|||`2016$`" type="V_String" column="11" />
+                <Field name="Sales" source="File: C:\Users\yeewe\Downloads\Lab 1 Dataset-20260408\SUPERSTORE ORDERS_20162019.xlsx|||`2016$`" type="Double" column="12" />
+                <Field name="Segment" size="255" source="File: C:\Users\yeewe\Downloads\Lab 1 Dataset-20260408\SUPERSTORE ORDERS_20162019.xlsx|||`2016$`" type="V_String" column="13" />
+                <Field name="Ship Mode" size="255" source="File: C:\Users\yeewe\Downloads\Lab 1 Dataset-20260408\SUPERSTORE ORDERS_20162019.xlsx|||`2016$`" type="V_String" column="14" />
+                <Field name="State" size="255" source="File: C:\Users\yeewe\Downloads\Lab 1 Dataset-20260408\SUPERSTORE ORDERS_20162019.xlsx|||`2016$`" type="V_String" column="15" />
+                <Field name="Sub-Category" size="255" source="File: C:\Users\yeewe\Downloads\Lab 1 Dataset-20260408\SUPERSTORE ORDERS_20162019.xlsx|||`2016$`" type="V_String" column="16" />
+                <Field name="OrderDate" source="File: C:\Users\yeewe\Downloads\Lab 1 Dataset-20260408\SUPERSTORE ORDERS_20162019.xlsx|||`2016$`" type="Date" column="17" />
+                <Field name="ShipDate" source="File: C:\Users\yeewe\Downloads\Lab 1 Dataset-20260408\SUPERSTORE ORDERS_20162019.xlsx|||`2016$`" type="Date" column="18" />
+                <Field name="Days to Ship Scheduled" source="File: C:\Users\yeewe\Downloads\Lab 1 Dataset-20260408\SUPERSTORE ORDERS_20162019.xlsx|||`2016$`" type="Double" column="19" />
+              </RecordInfo>
+            </MetaInfo>
+            <MetaInfo name="#2">
+              <RecordInfo>
+                <Field name="Category" size="15" source="File: C:\Users\yeewe\Downloads\Lab 1 Dataset-20260408\ORDERS_2020.csv" type="String" column="1" />
+                <Field name="City" size="17" source="File: C:\Users\yeewe\Downloads\Lab 1 Dataset-20260408\ORDERS_2020.csv" type="V_String" column="2" />
+                <Field name="Country/Region" size="13" source="File: C:\Users\yeewe\Downloads\Lab 1 Dataset-20260408\ORDERS_2020.csv" type="String" column="3" />
+                <Field name="Customer Name" size="22" source="File: C:\Users\yeewe\Downloads\Lab 1 Dataset-20260408\ORDERS_2020.csv" type="V_String" column="4" />
+                <Field name="Discount" source="File: C:\Users\yeewe\Downloads\Lab 1 Dataset-20260408\ORDERS_2020.csv" type="Double" column="5" />
+                <Field name="Order ID" size="14" source="File: C:\Users\yeewe\Downloads\Lab 1 Dataset-20260408\ORDERS_2020.csv" type="String" column="6" />
+                <Field name="Postal Code" source="File: C:\Users\yeewe\Downloads\Lab 1 Dataset-20260408\ORDERS_2020.csv" type="Int32" column="7" />
+                <Field name="Product Name" size="127" source="File: C:\Users\yeewe\Downloads\Lab 1 Dataset-20260408\ORDERS_2020.csv" type="V_String" column="8" />
+                <Field name="Profit" source="File: C:\Users\yeewe\Downloads\Lab 1 Dataset-20260408\ORDERS_2020.csv" type="Double" column="9" />
+                <Field name="Quantity" source="File: C:\Users\yeewe\Downloads\Lab 1 Dataset-20260408\ORDERS_2020.csv" type="Byte" column="10" />
+                <Field name="Region" size="7" source="File: C:\Users\yeewe\Downloads\Lab 1 Dataset-20260408\ORDERS_2020.csv" type="String" column="11" />
+                <Field name="Sales" source="File: C:\Users\yeewe\Downloads\Lab 1 Dataset-20260408\ORDERS_2020.csv" type="Double" column="12" />
+                <Field name="Segment" size="11" source="File: C:\Users\yeewe\Downloads\Lab 1 Dataset-20260408\ORDERS_2020.csv" type="String" column="13" />
+                <Field name="Ship Mode" size="14" source="File: C:\Users\yeewe\Downloads\Lab 1 Dataset-20260408\ORDERS_2020.csv" type="String" column="14" />
+                <Field name="State" size="20" source="File: C:\Users\yeewe\Downloads\Lab 1 Dataset-20260408\ORDERS_2020.csv" type="V_String" column="15" />
+                <Field name="Sub-Category" size="11" source="File: C:\Users\yeewe\Downloads\Lab 1 Dataset-20260408\ORDERS_2020.csv" type="String" column="16" />
+                <Field name="Order Date" size="19" source="DateTime: To yyyy-MM-dd hh:mm:ss" type="DateTime" column="17" />
+                <Field name="Ship Date" source="DateTime: To dd/MM/yyyy" type="Date" column="18" />
+                <Field name="Days to Ship Scheduled" source="File: C:\Users\yeewe\Downloads\Lab 1 Dataset-20260408\ORDERS_2020.csv" type="Byte" column="19" />
+              </RecordInfo>
+            </MetaInfo>
+          </MultiMetaInfo>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ManualDelayed</Mode>
+          <SetOutputOrder value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="22">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DateTime.DateTime">
+        <Position x="522" y="294" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <IsFrom value="False" />
+          <InputFieldName>Ship Date</InputFieldName>
+          <Language>English</Language>
+          <Format>dd/MM/yyyy</Format>
+          <OutputFieldName>ShipDate_new</OutputFieldName>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Convert Ship Date From:
+Custom</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDateTime" />
+    </Node>
+    <Node ToolID="23">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="654" y="294" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Row ID" selected="False" />
+            <SelectField field="Order Date" selected="False" />
+            <SelectField field="Ship Date" selected="False" />
+            <SelectField field="OrderDate_New" selected="True" rename="Order Date" />
+            <SelectField field="ShipDate_new" selected="True" rename="Ship Date" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="24">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="870" y="186" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\yeewe\AppData\Local\Temp\Alteryx\Engine_30084_3ade8f257c6b4e79859a150e2b3e9371_\Engine_30084_e5113515ef334f4b9fa7163926c173b2~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="21" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="23" Connection="Output" />
+      <Destination ToolID="21" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="True" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="True" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="Output" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Output" />
+      <Destination ToolID="16" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="16" Connection="Output" />
+      <Destination ToolID="22" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="21" Connection="Output" />
+      <Destination ToolID="24" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="22" Connection="Output" />
+      <Destination ToolID="23" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <DefaultTZ value="Local" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <IsTemplate value="False" />
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Workflow2</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="6d2f9af6-ca9f-495e-9a97-6607b3d20da7" />
+      <Telemetry>
+        <PreviousWorkflowId value="3a70c207-d43f-4081-98f6-8f14eb30e7ff" />
+        <OriginWorkflowId value="3a70c207-d43f-4081-98f6-8f14eb30e7ff" />
+      </Telemetry>
+      <PlatformWorkflowId value="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

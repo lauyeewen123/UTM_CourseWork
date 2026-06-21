@@ -1,0 +1,423 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2025.2" RunE2="T">
+  <Nodes>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="79" y="258" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="2" />
+          <Fields>
+            <Field name="City" />
+          </Fields>
+          <Data>
+            <r>
+              <c>JHB</c>
+            </r>
+            <r>
+              <c>KUL</c>
+            </r>
+          </Data>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="67" y="54" width="166" height="24" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Read Single File</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="True" />
+          <Folded value="True" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Read Single File</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="1">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="91" y="114" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">C:\Users\yeewe\Downloads\Lab 1 Dataset-20260408\ORDER_2016.xlsx|||`Sheet1$`</File>
+              <FormatSpecificOptions>
+                <FirstRowData>False</FirstRowData>
+                <ImportLine>1</ImportLine>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>ORDER_2016.xlsx
+Query=`Sheet1$`</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Category" size="255" source="File: C:\Users\yeewe\Downloads\Lab 1 Dataset-20260408\ORDER_2016.xlsx|||`Sheet1$`" type="V_String" />
+                <Field name="City" size="255" source="File: C:\Users\yeewe\Downloads\Lab 1 Dataset-20260408\ORDER_2016.xlsx|||`Sheet1$`" type="V_String" />
+                <Field name="Country/Region" size="255" source="File: C:\Users\yeewe\Downloads\Lab 1 Dataset-20260408\ORDER_2016.xlsx|||`Sheet1$`" type="V_String" />
+                <Field name="Customer Name" size="255" source="File: C:\Users\yeewe\Downloads\Lab 1 Dataset-20260408\ORDER_2016.xlsx|||`Sheet1$`" type="V_String" />
+                <Field name="Discount" source="File: C:\Users\yeewe\Downloads\Lab 1 Dataset-20260408\ORDER_2016.xlsx|||`Sheet1$`" type="Double" />
+                <Field name="Order ID" size="255" source="File: C:\Users\yeewe\Downloads\Lab 1 Dataset-20260408\ORDER_2016.xlsx|||`Sheet1$`" type="V_String" />
+                <Field name="Postal Code" size="255" source="File: C:\Users\yeewe\Downloads\Lab 1 Dataset-20260408\ORDER_2016.xlsx|||`Sheet1$`" type="V_String" />
+                <Field name="Product Name" size="255" source="File: C:\Users\yeewe\Downloads\Lab 1 Dataset-20260408\ORDER_2016.xlsx|||`Sheet1$`" type="V_WString" />
+                <Field name="Profit" source="File: C:\Users\yeewe\Downloads\Lab 1 Dataset-20260408\ORDER_2016.xlsx|||`Sheet1$`" type="Double" />
+                <Field name="Quantity" source="File: C:\Users\yeewe\Downloads\Lab 1 Dataset-20260408\ORDER_2016.xlsx|||`Sheet1$`" type="Double" />
+                <Field name="Region" size="255" source="File: C:\Users\yeewe\Downloads\Lab 1 Dataset-20260408\ORDER_2016.xlsx|||`Sheet1$`" type="V_String" />
+                <Field name="Sales" source="File: C:\Users\yeewe\Downloads\Lab 1 Dataset-20260408\ORDER_2016.xlsx|||`Sheet1$`" type="Double" />
+                <Field name="Segment" size="255" source="File: C:\Users\yeewe\Downloads\Lab 1 Dataset-20260408\ORDER_2016.xlsx|||`Sheet1$`" type="V_String" />
+                <Field name="Ship Mode" size="255" source="File: C:\Users\yeewe\Downloads\Lab 1 Dataset-20260408\ORDER_2016.xlsx|||`Sheet1$`" type="V_String" />
+                <Field name="State" size="255" source="File: C:\Users\yeewe\Downloads\Lab 1 Dataset-20260408\ORDER_2016.xlsx|||`Sheet1$`" type="V_String" />
+                <Field name="Sub-Category" size="255" source="File: C:\Users\yeewe\Downloads\Lab 1 Dataset-20260408\ORDER_2016.xlsx|||`Sheet1$`" type="V_String" />
+                <Field name="OrderDate" source="File: C:\Users\yeewe\Downloads\Lab 1 Dataset-20260408\ORDER_2016.xlsx|||`Sheet1$`" type="Date" />
+                <Field name="ShipDate" source="File: C:\Users\yeewe\Downloads\Lab 1 Dataset-20260408\ORDER_2016.xlsx|||`Sheet1$`" type="Date" />
+                <Field name="Days to Ship Scheduled" source="File: C:\Users\yeewe\Downloads\Lab 1 Dataset-20260408\ORDER_2016.xlsx|||`Sheet1$`" type="Double" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="2">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="187" y="102" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\yeewe\AppData\Local\Temp\Alteryx\Engine_21804_6099a8c202a54098b4444db052b0ee28_\Engine_21804_46eec2cef772434cb90cf717446a1ebe~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="65" y="101" width="178" height="24" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Read Multiple File</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="True" />
+          <Folded value="True" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Read Multiple File</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="4">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="187" y="150" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\yeewe\AppData\Local\Temp\Alteryx\Engine_2088_94ad38b3f0754e2b9d30e87162fe3b02_\Engine_2088_b8b64a89b66f48699ed52b9f9e8663a1~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="3">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="90" y="150" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">C:\Users\yeewe\Downloads\Lab 1 Dataset-20260408\ORDER_*.xlsx|||`Sheet1$`</File>
+              <FormatSpecificOptions>
+                <FirstRowData>False</FirstRowData>
+                <ImportLine>1</ImportLine>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>ORDER_*.xlsx
+Query=`Sheet1$`</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Category" size="255" source="File: C:\Users\yeewe\Downloads\Lab 1 Dataset-20260408\ORDER_2016.xlsx|||`Sheet1$`" type="V_String" />
+                <Field name="City" size="255" source="File: C:\Users\yeewe\Downloads\Lab 1 Dataset-20260408\ORDER_2016.xlsx|||`Sheet1$`" type="V_String" />
+                <Field name="Country/Region" size="255" source="File: C:\Users\yeewe\Downloads\Lab 1 Dataset-20260408\ORDER_2016.xlsx|||`Sheet1$`" type="V_String" />
+                <Field name="Customer Name" size="255" source="File: C:\Users\yeewe\Downloads\Lab 1 Dataset-20260408\ORDER_2016.xlsx|||`Sheet1$`" type="V_String" />
+                <Field name="Discount" source="File: C:\Users\yeewe\Downloads\Lab 1 Dataset-20260408\ORDER_2016.xlsx|||`Sheet1$`" type="Double" />
+                <Field name="Order ID" size="255" source="File: C:\Users\yeewe\Downloads\Lab 1 Dataset-20260408\ORDER_2016.xlsx|||`Sheet1$`" type="V_String" />
+                <Field name="Postal Code" size="255" source="File: C:\Users\yeewe\Downloads\Lab 1 Dataset-20260408\ORDER_2016.xlsx|||`Sheet1$`" type="V_String" />
+                <Field name="Product Name" size="255" source="File: C:\Users\yeewe\Downloads\Lab 1 Dataset-20260408\ORDER_2016.xlsx|||`Sheet1$`" type="V_WString" />
+                <Field name="Profit" source="File: C:\Users\yeewe\Downloads\Lab 1 Dataset-20260408\ORDER_2016.xlsx|||`Sheet1$`" type="Double" />
+                <Field name="Quantity" source="File: C:\Users\yeewe\Downloads\Lab 1 Dataset-20260408\ORDER_2016.xlsx|||`Sheet1$`" type="Double" />
+                <Field name="Region" size="255" source="File: C:\Users\yeewe\Downloads\Lab 1 Dataset-20260408\ORDER_2016.xlsx|||`Sheet1$`" type="V_String" />
+                <Field name="Sales" source="File: C:\Users\yeewe\Downloads\Lab 1 Dataset-20260408\ORDER_2016.xlsx|||`Sheet1$`" type="Double" />
+                <Field name="Segment" size="255" source="File: C:\Users\yeewe\Downloads\Lab 1 Dataset-20260408\ORDER_2016.xlsx|||`Sheet1$`" type="V_String" />
+                <Field name="Ship Mode" size="255" source="File: C:\Users\yeewe\Downloads\Lab 1 Dataset-20260408\ORDER_2016.xlsx|||`Sheet1$`" type="V_String" />
+                <Field name="State" size="255" source="File: C:\Users\yeewe\Downloads\Lab 1 Dataset-20260408\ORDER_2016.xlsx|||`Sheet1$`" type="V_String" />
+                <Field name="Sub-Category" size="255" source="File: C:\Users\yeewe\Downloads\Lab 1 Dataset-20260408\ORDER_2016.xlsx|||`Sheet1$`" type="V_String" />
+                <Field name="OrderDate" source="File: C:\Users\yeewe\Downloads\Lab 1 Dataset-20260408\ORDER_2016.xlsx|||`Sheet1$`" type="Date" />
+                <Field name="ShipDate" source="File: C:\Users\yeewe\Downloads\Lab 1 Dataset-20260408\ORDER_2016.xlsx|||`Sheet1$`" type="Date" />
+                <Field name="Days to Ship Scheduled" source="File: C:\Users\yeewe\Downloads\Lab 1 Dataset-20260408\ORDER_2016.xlsx|||`Sheet1$`" type="Double" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="53" y="161" width="367" height="213" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Read Multiple Sheet</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Read Multiple Sheet</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="7">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="78" y="210" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">C:\Users\yeewe\Downloads\Lab 1 Dataset-20260408\SUPERSTORE ORDERS_20162019.xlsx|||&lt;List of Sheet Names&gt;</File>
+              <FormatSpecificOptions>
+                <FirstRowData>False</FirstRowData>
+                <ImportLine>1</ImportLine>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>SUPERSTORE ORDERS_20162019.xlsx
+Query=&lt;List of Sheet Names&gt;</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Sheet Names" size="31" source="File: C:\Users\yeewe\Downloads\Lab 1 Dataset-20260408\SUPERSTORE ORDERS_20162019.xlsx|||&lt;List of Sheet Names&gt;" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="8">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DynamicInput.DynamicInput">
+            <Position x="199" y="210" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <InputConfiguration>
+                <Configuration>
+                  <Passwords />
+                  <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">C:\Users\yeewe\Downloads\Lab 1 Dataset-20260408\SUPERSTORE ORDERS_20162019.xlsx|||`2016$`</File>
+                  <FormatSpecificOptions>
+                    <FirstRowData>False</FirstRowData>
+                    <ImportLine>1</ImportLine>
+                  </FormatSpecificOptions>
+                </Configuration>
+              </InputConfiguration>
+              <Mode>ReadList</Mode>
+              <ReadList_Field>Sheet Names</ReadList_Field>
+              <ReadList_Type>FileName</ReadList_Type>
+              <ErrorBehaviour>Error</ErrorBehaviour>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDynamicInput" />
+        </Node>
+        <Node ToolID="9">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="295" y="210" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\yeewe\AppData\Local\Temp\Alteryx\Engine_39968_99ab5048e11f4238bd6e8f35ccd2e20c_\Engine_39968_87a1f1615f75435580f037199b31be6c~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="15">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="294" y="258" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File MaxRecords="" FileFormat="19">C:\Users\yeewe\OneDrive\Documents\Bussiness Intelligence\SuperstoreCom.yxdb</File>
+              <Passwords />
+              <Disable>False</Disable>
+              <FormatSpecificOptions>
+                <WriteCompatibleVersion>False</WriteCompatibleVersion>
+                <NoSpatialIndex>False</NoSpatialIndex>
+                <SaveSource>True</SaveSource>
+                <SuppressBlankFile>False</SuppressBlankFile>
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>SuperstoreCom.yxdb</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+      </ChildNodes>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="15" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <DefaultTZ value="Local" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <IsTemplate value="False" />
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Workflow1</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="98519ccb-cf9f-4724-a32d-6366bd277398" />
+      <Telemetry>
+        <PreviousWorkflowId value="40e71b07-b92c-4d32-8772-0cb9d3f251db" />
+        <OriginWorkflowId value="40e71b07-b92c-4d32-8772-0cb9d3f251db" />
+      </Telemetry>
+      <PlatformWorkflowId value="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
