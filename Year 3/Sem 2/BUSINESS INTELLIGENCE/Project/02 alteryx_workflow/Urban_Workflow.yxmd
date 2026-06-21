@@ -1,0 +1,409 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2025.2" RunE2="T">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="0">C:\Users\yeewe\OneDrive\Documents\Bussiness Intelligence\Project\world-data-2023.csv</File>
+          <FormatSpecificOptions>
+            <CodePage>28591</CodePage>
+            <Delimeter>,</Delimeter>
+            <IgnoreErrors>False</IgnoreErrors>
+            <FieldLen>254</FieldLen>
+            <AllowShareWrite>False</AllowShareWrite>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>world-data-2023.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Country" size="254" source="File: C:\Users\yeewe\OneDrive\Documents\Bussiness Intelligence\Project\world-data-2023.csv" type="V_String" />
+            <Field name="Density&#xA;(P/Km2)" size="254" source="File: C:\Users\yeewe\OneDrive\Documents\Bussiness Intelligence\Project\world-data-2023.csv" type="V_String" />
+            <Field name="Abbreviation" size="254" source="File: C:\Users\yeewe\OneDrive\Documents\Bussiness Intelligence\Project\world-data-2023.csv" type="V_String" />
+            <Field name="Agricultural Land( %)" size="254" source="File: C:\Users\yeewe\OneDrive\Documents\Bussiness Intelligence\Project\world-data-2023.csv" type="V_String" />
+            <Field name="Land Area(Km2)" size="254" source="File: C:\Users\yeewe\OneDrive\Documents\Bussiness Intelligence\Project\world-data-2023.csv" type="V_String" />
+            <Field name="Armed Forces size" size="254" source="File: C:\Users\yeewe\OneDrive\Documents\Bussiness Intelligence\Project\world-data-2023.csv" type="V_String" />
+            <Field name="Birth Rate" size="254" source="File: C:\Users\yeewe\OneDrive\Documents\Bussiness Intelligence\Project\world-data-2023.csv" type="V_String" />
+            <Field name="Calling Code" size="254" source="File: C:\Users\yeewe\OneDrive\Documents\Bussiness Intelligence\Project\world-data-2023.csv" type="V_String" />
+            <Field name="Capital/Major City" size="254" source="File: C:\Users\yeewe\OneDrive\Documents\Bussiness Intelligence\Project\world-data-2023.csv" type="V_String" />
+            <Field name="Co2-Emissions" size="254" source="File: C:\Users\yeewe\OneDrive\Documents\Bussiness Intelligence\Project\world-data-2023.csv" type="V_String" />
+            <Field name="CPI" size="254" source="File: C:\Users\yeewe\OneDrive\Documents\Bussiness Intelligence\Project\world-data-2023.csv" type="V_String" />
+            <Field name="CPI Change (%)" size="254" source="File: C:\Users\yeewe\OneDrive\Documents\Bussiness Intelligence\Project\world-data-2023.csv" type="V_String" />
+            <Field name="Currency-Code" size="254" source="File: C:\Users\yeewe\OneDrive\Documents\Bussiness Intelligence\Project\world-data-2023.csv" type="V_String" />
+            <Field name="Fertility Rate" size="254" source="File: C:\Users\yeewe\OneDrive\Documents\Bussiness Intelligence\Project\world-data-2023.csv" type="V_String" />
+            <Field name="Forested Area (%)" size="254" source="File: C:\Users\yeewe\OneDrive\Documents\Bussiness Intelligence\Project\world-data-2023.csv" type="V_String" />
+            <Field name="Gasoline Price" size="254" source="File: C:\Users\yeewe\OneDrive\Documents\Bussiness Intelligence\Project\world-data-2023.csv" type="V_String" />
+            <Field name="GDP" size="254" source="File: C:\Users\yeewe\OneDrive\Documents\Bussiness Intelligence\Project\world-data-2023.csv" type="V_String" />
+            <Field name="Gross primary education enrollment (%)" size="254" source="File: C:\Users\yeewe\OneDrive\Documents\Bussiness Intelligence\Project\world-data-2023.csv" type="V_String" />
+            <Field name="Gross tertiary education enrollment (%)" size="254" source="File: C:\Users\yeewe\OneDrive\Documents\Bussiness Intelligence\Project\world-data-2023.csv" type="V_String" />
+            <Field name="Infant mortality" size="254" source="File: C:\Users\yeewe\OneDrive\Documents\Bussiness Intelligence\Project\world-data-2023.csv" type="V_String" />
+            <Field name="Largest city" size="254" source="File: C:\Users\yeewe\OneDrive\Documents\Bussiness Intelligence\Project\world-data-2023.csv" type="V_String" />
+            <Field name="Life expectancy" size="254" source="File: C:\Users\yeewe\OneDrive\Documents\Bussiness Intelligence\Project\world-data-2023.csv" type="V_String" />
+            <Field name="Maternal mortality ratio" size="254" source="File: C:\Users\yeewe\OneDrive\Documents\Bussiness Intelligence\Project\world-data-2023.csv" type="V_String" />
+            <Field name="Minimum wage" size="254" source="File: C:\Users\yeewe\OneDrive\Documents\Bussiness Intelligence\Project\world-data-2023.csv" type="V_String" />
+            <Field name="Official language" size="254" source="File: C:\Users\yeewe\OneDrive\Documents\Bussiness Intelligence\Project\world-data-2023.csv" type="V_String" />
+            <Field name="Out of pocket health expenditure" size="254" source="File: C:\Users\yeewe\OneDrive\Documents\Bussiness Intelligence\Project\world-data-2023.csv" type="V_String" />
+            <Field name="Physicians per thousand" size="254" source="File: C:\Users\yeewe\OneDrive\Documents\Bussiness Intelligence\Project\world-data-2023.csv" type="V_String" />
+            <Field name="Population" size="254" source="File: C:\Users\yeewe\OneDrive\Documents\Bussiness Intelligence\Project\world-data-2023.csv" type="V_String" />
+            <Field name="Population: Labor force participation (%)" size="254" source="File: C:\Users\yeewe\OneDrive\Documents\Bussiness Intelligence\Project\world-data-2023.csv" type="V_String" />
+            <Field name="Tax revenue (%)" size="254" source="File: C:\Users\yeewe\OneDrive\Documents\Bussiness Intelligence\Project\world-data-2023.csv" type="V_String" />
+            <Field name="Total tax rate" size="254" source="File: C:\Users\yeewe\OneDrive\Documents\Bussiness Intelligence\Project\world-data-2023.csv" type="V_String" />
+            <Field name="Unemployment rate" size="254" source="File: C:\Users\yeewe\OneDrive\Documents\Bussiness Intelligence\Project\world-data-2023.csv" type="V_String" />
+            <Field name="Urban_population" size="254" source="File: C:\Users\yeewe\OneDrive\Documents\Bussiness Intelligence\Project\world-data-2023.csv" type="V_String" />
+            <Field name="Latitude" size="254" source="File: C:\Users\yeewe\OneDrive\Documents\Bussiness Intelligence\Project\world-data-2023.csv" type="V_String" />
+            <Field name="Longitude" size="254" source="File: C:\Users\yeewe\OneDrive\Documents\Bussiness Intelligence\Project\world-data-2023.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings>
+        <Position x="150" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="Check Box (135)">False</Value>
+          <Value name="Check Box (136)">False</Value>
+          <Value name="List Box (11)">"Country"</Value>
+          <Value name="Check Box (84)">True</Value>
+          <Value name="Check Box (117)">True</Value>
+          <Value name="Check Box (15)">True</Value>
+          <Value name="Check Box (109)">False</Value>
+          <Value name="Check Box (122)">False</Value>
+          <Value name="Check Box (53)">False</Value>
+          <Value name="Check Box (58)">False</Value>
+          <Value name="Check Box (70)">False</Value>
+          <Value name="Check Box (77)">True</Value>
+          <Value name="Drop Down (81)">title</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="Cleanse.yxmc" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="270" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Country" selected="True" />
+            <SelectField field="Density&#xA;(P/Km2)" selected="True" type="Double" size="8" />
+            <SelectField field="Land Area(Km2)" selected="True" type="Int64" size="8" />
+            <SelectField field="CPI" selected="True" type="Double" size="8" />
+            <SelectField field="Fertility Rate" selected="True" type="Double" size="8" />
+            <SelectField field="GDP" selected="True" />
+            <SelectField field="Life expectancy" selected="True" type="Double" size="8" />
+            <SelectField field="Minimum wage" selected="True" />
+            <SelectField field="Population" selected="True" />
+            <SelectField field="Urban_population" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="390" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="ToNumber(Replace(Replace([GDP], &quot;$&quot;, &quot;&quot;), &quot;,&quot;, &quot;&quot;))&#xA;" field="GDP_Clean" size="8" type="Double" enabled="true" />
+            <FormulaField expression="ToNumber(Replace(Replace([Minimum wage], &quot;$&quot;, &quot;&quot;), &quot;,&quot;, &quot;&quot;))" field="Minimum wage_clean" size="8" type="Double" enabled="true" />
+            <FormulaField expression="ToNumber(Replace(Replace([Population], &quot;$&quot;, &quot;&quot;), &quot;,&quot;, &quot;&quot;))&#xA;" field="Population" size="254" type="V_String" enabled="true" />
+            <FormulaField expression="ToNumber(Replace(Replace([Urban_population], &quot;$&quot;, &quot;&quot;), &quot;,&quot;, &quot;&quot;))&#xA;" field="Urban_population" size="254" type="V_String" enabled="true" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>GDP_Clean = ToNumber(Replace(Replace([GDP], "$", ""), ",", ""))
+
+Minimum wage_cl...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings>
+        <Position x="678" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="listbox Select Incoming Fields">"Urban_population","Minimum wage_clean"</Value>
+          <Value name="radio Null Value">False</Value>
+          <Value name="radio User Specified Replace From Value">True</Value>
+          <Value name="updown User Replace Value">0.00000</Value>
+          <Value name="radio Mean">True</Value>
+          <Value name="radio Median">False</Value>
+          <Value name="radio Mode">False</Value>
+          <Value name="radio User Specified Replace With Value">False</Value>
+          <Value name="updown User Replace With Value">0.00000</Value>
+          <Value name="checkbox Impute Indicator">False</Value>
+          <Value name="checkbox Imputed Values Separate Field">False</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Country" size="32" source="Formula: IF &#xA;REGEX_Match([_CurrentFieldName_], '.*(?:_Indicator)$', 0) &amp;&amp; IsNull([_CurrentField_]) THEN &#xA;  0 &#xA;ELSE &#xA;  [_CurrentField_] &#xA;ENDIF" type="V_String" />
+            <Field name="Density&#xA;(P/Km2)" source="Formula: IF &#xA;REGEX_Match([_CurrentFieldName_], '.*(?:_Indicator)$', 0) &amp;&amp; IsNull([_CurrentField_]) THEN &#xA;  0 &#xA;ELSE &#xA;  [_CurrentField_] &#xA;ENDIF" type="Double" />
+            <Field name="Land Area(Km2)" source="Formula: IF &#xA;REGEX_Match([_CurrentFieldName_], '.*(?:_Indicator)$', 0) &amp;&amp; IsNull([_CurrentField_]) THEN &#xA;  0 &#xA;ELSE &#xA;  [_CurrentField_] &#xA;ENDIF" type="Int64" />
+            <Field name="CPI" source="Formula: IF &#xA;REGEX_Match([_CurrentFieldName_], '.*(?:_Indicator)$', 0) &amp;&amp; IsNull([_CurrentField_]) THEN &#xA;  0 &#xA;ELSE &#xA;  [_CurrentField_] &#xA;ENDIF" type="Double" />
+            <Field name="Fertility Rate" source="Formula: IF &#xA;REGEX_Match([_CurrentFieldName_], '.*(?:_Indicator)$', 0) &amp;&amp; IsNull([_CurrentField_]) THEN &#xA;  0 &#xA;ELSE &#xA;  [_CurrentField_] &#xA;ENDIF" type="Double" />
+            <Field name="GDP" size="20" source="Formula: IF &#xA;REGEX_Match([_CurrentFieldName_], '.*(?:_Indicator)$', 0) &amp;&amp; IsNull([_CurrentField_]) THEN &#xA;  0 &#xA;ELSE &#xA;  [_CurrentField_] &#xA;ENDIF" type="String" />
+            <Field name="Life expectancy" source="Formula: IF &#xA;REGEX_Match([_CurrentFieldName_], '.*(?:_Indicator)$', 0) &amp;&amp; IsNull([_CurrentField_]) THEN &#xA;  0 &#xA;ELSE &#xA;  [_CurrentField_] &#xA;ENDIF" type="Double" />
+            <Field name="Minimum wage" size="6" source="Formula: IF &#xA;REGEX_Match([_CurrentFieldName_], '.*(?:_Indicator)$', 0) &amp;&amp; IsNull([_CurrentField_]) THEN &#xA;  0 &#xA;ELSE &#xA;  [_CurrentField_] &#xA;ENDIF" type="String" />
+            <Field name="Population" source="Formula: IF &#xA;REGEX_Match([_CurrentFieldName_], '.*(?:_Indicator)$', 0) &amp;&amp; IsNull([_CurrentField_]) THEN &#xA;  0 &#xA;ELSE &#xA;  [_CurrentField_] &#xA;ENDIF" type="Int32" />
+            <Field name="Urban_population" source="Formula: IF &#xA;REGEX_Match([_CurrentFieldName_], '.*(?:_Indicator)$', 0) &amp;&amp; IsNull([_CurrentField_]) THEN &#xA;  0 &#xA;ELSE &#xA;  [_CurrentField_] &#xA;ENDIF" type="Int32" />
+            <Field name="GDP_Clean" source="Formula: IF &#xA;REGEX_Match([_CurrentFieldName_], '.*(?:_Indicator)$', 0) &amp;&amp; IsNull([_CurrentField_]) THEN &#xA;  0 &#xA;ELSE &#xA;  [_CurrentField_] &#xA;ENDIF" type="Double" />
+            <Field name="Minimum wage_clean" source="Formula: IF &#xA;REGEX_Match([_CurrentFieldName_], '.*(?:_Indicator)$', 0) &amp;&amp; IsNull([_CurrentField_]) THEN &#xA;  0 &#xA;ELSE &#xA;  [_CurrentField_] &#xA;ENDIF" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings Macro="Imputation_v3.yxmc" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="774" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="IF IsNull([Population]) OR [Population] = 0 THEN NULL()&#xA;ELSE ([Urban_population] / [Population]) * 100&#xA;ENDIF" field="Urban_Population_Pct" size="10.2" type="FixedDecimal" enabled="true" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Urban_Population_Pct = IF IsNull([Population]) OR [Population] = 0 THEN NULL()
+E...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="870" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Fertility Rate" selected="False" />
+            <SelectField field="GDP" selected="False" />
+            <SelectField field="Minimum wage" selected="False" />
+            <SelectField field="GDP_Clean" selected="True" rename="GDP" />
+            <SelectField field="Minimum wage_clean" selected="True" rename="Minimum wage" />
+            <SelectField field="Urban_Population_Pct" selected="True" rename="Urban Population Percentage" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings>
+        <Position x="582" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="listbox Select Incoming Fields">"Density
+(P/Km2)","Land Area(Km2)","CPI","Fertility Rate","Life expectancy","GDP_Clean"</Value>
+          <Value name="radio Null Value">True</Value>
+          <Value name="radio User Specified Replace From Value">False</Value>
+          <Value name="updown User Replace Value">0.00000</Value>
+          <Value name="radio Mean">True</Value>
+          <Value name="radio Median">False</Value>
+          <Value name="radio Mode">False</Value>
+          <Value name="radio User Specified Replace With Value">False</Value>
+          <Value name="updown User Replace With Value">0.00000</Value>
+          <Value name="checkbox Impute Indicator">False</Value>
+          <Value name="checkbox Imputed Values Separate Field">False</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Country" size="32" source="Formula: IF &#xA;REGEX_Match([_CurrentFieldName_], '.*(?:_Indicator)$', 0) &amp;&amp; IsNull([_CurrentField_]) THEN &#xA;  0 &#xA;ELSE &#xA;  [_CurrentField_] &#xA;ENDIF" type="V_String" />
+            <Field name="Density&#xA;(P/Km2)" source="Formula: IF &#xA;REGEX_Match([_CurrentFieldName_], '.*(?:_Indicator)$', 0) &amp;&amp; IsNull([_CurrentField_]) THEN &#xA;  0 &#xA;ELSE &#xA;  [_CurrentField_] &#xA;ENDIF" type="Double" />
+            <Field name="Land Area(Km2)" source="Formula: IF &#xA;REGEX_Match([_CurrentFieldName_], '.*(?:_Indicator)$', 0) &amp;&amp; IsNull([_CurrentField_]) THEN &#xA;  0 &#xA;ELSE &#xA;  [_CurrentField_] &#xA;ENDIF" type="Int64" />
+            <Field name="CPI" source="Formula: IF &#xA;REGEX_Match([_CurrentFieldName_], '.*(?:_Indicator)$', 0) &amp;&amp; IsNull([_CurrentField_]) THEN &#xA;  0 &#xA;ELSE &#xA;  [_CurrentField_] &#xA;ENDIF" type="Double" />
+            <Field name="Fertility Rate" source="Formula: IF &#xA;REGEX_Match([_CurrentFieldName_], '.*(?:_Indicator)$', 0) &amp;&amp; IsNull([_CurrentField_]) THEN &#xA;  0 &#xA;ELSE &#xA;  [_CurrentField_] &#xA;ENDIF" type="Double" />
+            <Field name="GDP" size="20" source="Formula: IF &#xA;REGEX_Match([_CurrentFieldName_], '.*(?:_Indicator)$', 0) &amp;&amp; IsNull([_CurrentField_]) THEN &#xA;  0 &#xA;ELSE &#xA;  [_CurrentField_] &#xA;ENDIF" type="String" />
+            <Field name="Life expectancy" source="Formula: IF &#xA;REGEX_Match([_CurrentFieldName_], '.*(?:_Indicator)$', 0) &amp;&amp; IsNull([_CurrentField_]) THEN &#xA;  0 &#xA;ELSE &#xA;  [_CurrentField_] &#xA;ENDIF" type="Double" />
+            <Field name="Minimum wage" size="6" source="Formula: IF &#xA;REGEX_Match([_CurrentFieldName_], '.*(?:_Indicator)$', 0) &amp;&amp; IsNull([_CurrentField_]) THEN &#xA;  0 &#xA;ELSE &#xA;  [_CurrentField_] &#xA;ENDIF" type="String" />
+            <Field name="Population" source="Formula: IF &#xA;REGEX_Match([_CurrentFieldName_], '.*(?:_Indicator)$', 0) &amp;&amp; IsNull([_CurrentField_]) THEN &#xA;  0 &#xA;ELSE &#xA;  [_CurrentField_] &#xA;ENDIF" type="Int32" />
+            <Field name="Urban_population" source="Formula: IF &#xA;REGEX_Match([_CurrentFieldName_], '.*(?:_Indicator)$', 0) &amp;&amp; IsNull([_CurrentField_]) THEN &#xA;  0 &#xA;ELSE &#xA;  [_CurrentField_] &#xA;ENDIF" type="Int32" />
+            <Field name="GDP_Clean" source="Formula: IF &#xA;REGEX_Match([_CurrentFieldName_], '.*(?:_Indicator)$', 0) &amp;&amp; IsNull([_CurrentField_]) THEN &#xA;  0 &#xA;ELSE &#xA;  [_CurrentField_] &#xA;ENDIF" type="Double" />
+            <Field name="Minimum wage_clean" source="Formula: IF &#xA;REGEX_Match([_CurrentFieldName_], '.*(?:_Indicator)$', 0) &amp;&amp; IsNull([_CurrentField_]) THEN &#xA;  0 &#xA;ELSE &#xA;  [_CurrentField_] &#xA;ENDIF" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings Macro="Imputation_v3.yxmc" />
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AutoField.AutoField">
+        <Position x="498" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Fields>
+            <Field field="Country" selected="True" />
+            <Field field="GDP" selected="True" />
+            <Field field="Minimum wage" selected="True" />
+            <Field field="Population" selected="True" />
+            <Field field="Urban_population" selected="True" />
+            <Field field="*Unknown" selected="True" />
+          </Fields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Country" size="32" source="Formula: Trim([_CurrentField_],&quot; 	&quot;+CharFromInt(10)+CharFromInt(13)+CharFromInt(160))" type="V_String" />
+            <Field name="Density&#xA;(P/Km2)" source="File: C:\Users\yeewe\OneDrive\Documents\Bussiness Intelligence\Project\world-data-2023.csv" type="Double" />
+            <Field name="Land Area(Km2)" source="File: C:\Users\yeewe\OneDrive\Documents\Bussiness Intelligence\Project\world-data-2023.csv" type="Int64" />
+            <Field name="CPI" source="File: C:\Users\yeewe\OneDrive\Documents\Bussiness Intelligence\Project\world-data-2023.csv" type="Double" />
+            <Field name="Fertility Rate" source="File: C:\Users\yeewe\OneDrive\Documents\Bussiness Intelligence\Project\world-data-2023.csv" type="Double" />
+            <Field name="GDP" size="20" source="File: C:\Users\yeewe\OneDrive\Documents\Bussiness Intelligence\Project\world-data-2023.csv" type="String" />
+            <Field name="Life expectancy" source="File: C:\Users\yeewe\OneDrive\Documents\Bussiness Intelligence\Project\world-data-2023.csv" type="Double" />
+            <Field name="Minimum wage" size="6" source="File: C:\Users\yeewe\OneDrive\Documents\Bussiness Intelligence\Project\world-data-2023.csv" type="String" />
+            <Field name="Population" source="Formula: ToNumber(Replace(Replace([Population], &quot;$&quot;, &quot;&quot;), &quot;,&quot;, &quot;&quot;))&#xA;" type="Int32" />
+            <Field name="Urban_population" source="Formula: ToNumber(Replace(Replace([Urban_population], &quot;$&quot;, &quot;&quot;), &quot;,&quot;, &quot;&quot;))&#xA;" type="Int32" />
+            <Field name="GDP_Clean" source="Formula: ToNumber(Replace(Replace([GDP], &quot;$&quot;, &quot;&quot;), &quot;,&quot;, &quot;&quot;))&#xA;" type="Double" />
+            <Field name="Minimum wage_clean" source="Formula: ToNumber(Replace(Replace([Minimum wage], &quot;$&quot;, &quot;&quot;), &quot;,&quot;, &quot;&quot;))" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAutoField" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="2" Connection="Input2" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output26" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Output" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Output" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <DefaultTZ value="Local" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <IsTemplate value="False" />
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Urban_Workflow</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="6b5d65f4-821e-4640-80da-db4c977d9350" />
+      <Telemetry>
+        <PreviousWorkflowId value="937dda71-4cbd-407c-9eea-f6a1d81de66f" />
+        <OriginWorkflowId value="937dda71-4cbd-407c-9eea-f6a1d81de66f" />
+      </Telemetry>
+      <PlatformWorkflowId value="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
