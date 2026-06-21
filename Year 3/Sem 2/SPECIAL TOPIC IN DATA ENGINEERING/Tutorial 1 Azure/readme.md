@@ -13,8 +13,8 @@ Through this tutorial, I learned how cloud platforms support scalable and effici
 
 | Resource | Description |
 |-----------|-------------|
-| [Azure Folder](./Azure) | Azure screenshots, exercises, and supporting materials |
-| [Tutorial Report](./Group_2_Tutorial%201%20MS%20Azure.pdf) | Complete tutorial report and documentation |
+| [Azure Folder](./Azure) | Azure notebooks, datasets, and implementation files used throughout the tutorial |
+| [Tutorial Report](./Group_2_Tutorial1%20MS%20Azure.pdf) | Complete tutorial report and documentation |
 
 ---
 
