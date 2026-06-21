@@ -9,8 +9,8 @@ This course focused on processing large-scale datasets efficiently using modern 
 | Category | Link |
 |----------|----------|
 | Project 1 | [View Folder](./Project%201) |
+| Assignment 1| [View Folder](./Assignment%101) |
 | Assignment 2 | [View Folder](./Assignment%202) |
-| Coursework Report | [View File](./HPDP__Lau_Yee_Wen_merged.pdf) |
 
 ## Featured Project
 
